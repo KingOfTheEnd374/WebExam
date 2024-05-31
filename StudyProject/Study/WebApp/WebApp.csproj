@@ -1,0 +1,79 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-WebApp-F6FBF59E-5100-4C66-8276-DCC59E6A9994</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\App.DAL.EF\App.DAL.EF.csproj" />
+      <ProjectReference Include="..\App.DTO\App.DTO.csproj" />
+      <ProjectReference Include="..\Helpers\Helpers.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Publishers\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Publishers\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Publishers\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Publishers\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Publishers\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Genres\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Genres\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Genres\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Genres\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Genres\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Games\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Games\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Games\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Games\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Games\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Developers\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Developers\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Developers\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Developers\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Developers\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Teacher\Views\Subject\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Teacher\Views\Subject\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Teacher\Views\Subject\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Teacher\Views\Subject\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Teacher\Views\Subject\Index.cshtml" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+</Project>
